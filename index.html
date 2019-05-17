@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INST377Project</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <img id="logo" src="Images/logo.jpeg" alt="FreeFood4Terp Logo" width="300" height="100">
+    </div>
+
+    <form class="searchbar" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="description">
+      <div class="leftcolumn">
+        <div class="box">
+          <h2>Today's Events</h2>
+          <!--only first link works-->
+          <p>1. <a href="eventpage.html">Buy One Get One Free from Maryland Dairy!</a></br>
+              Stressed out studying for finals coming up?</br>
+              Come take a break with your friend!...</br>
+            </br>
+            2. <a href="homeeventpage.html">Free Chick Fil A Sandwich!</a></br>
+              Aren’t you hungry?</br>
+              Come by Chick-fil-A and grab yourself a free sandwich!...</br>
+            </br>
+            3. <a href="homepage.html">$4 Off on Any Meal from Panda Express!</a></br>
+            You want a nice meal but don’t have enough?</br>
+            Well, it’s your lucky day!...</br>
+          </br>
+
+          <!--will go to list of event page-->
+            <a href="listeventpage.html">see more...</a></br>
+          </p>
+
+        </div><!--END box-->
+        <div class="box">
+          <h2>Map</h2>
+          <img id="map" src="Images/nolocmap.jpeg" alt="map" width="512" height="400">
+        </div><!-- END map-->
+      </div><!--END leftcolumn-->
+
+      <div class="rightcolumn">
+        <div class="box">
+          <label>Date: </label>
+          <input type = "date" name="adddate">
+          <input type = "submit"> </br>
+          <img id="calender" src="Images/calendar.jpeg" alt="calender" width="200" height="200">
+        </div><!--END box-->
+      </div><!--END rightcolumn-->
+
+      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FreeFood4Terp Event Submission</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="Scrips/view.js"></script>
+<script type="text/javascript" src="Scripts/calendar.js"></script>
+</head>
+<body id="main_body" >
+
+	<img id="top" src="Images/top.png" alt="">
+	<div id="form_container">
+
+		<h1><a>FreeFood4Terp Event Submission</a></h1>
+		<form id="form_63484" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>FreeFood4Terp Event Submission</h2>
+			<p>Use this form to submit the details of a free food event.</p>
+		</div>
+			<ul >
+
+					<li id="li_3" >
+		<label class="description" for="element_3">Your name </label>
+		<span>
+			<input id="element_3_1" name= "element_3_1" class="element text" maxlength="255" size="8" value=""/>
+			<label>First</label>
+		</span>
+		<span>
+			<input id="element_3_2" name= "element_3_2" class="element text" maxlength="255" size="14" value=""/>
+			<label>Last</label>
+		</span>
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Event title </label>
+		<div>
+			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Event location </label>
+		<div>
+			<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">Event date </label>
+		<span>
+			<input id="element_1_1" name="element_1_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_1_1">MM</label>
+		</span>
+		<span>
+			<input id="element_1_2" name="element_1_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_1_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_1_3" name="element_1_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_1_3">YYYY</label>
+		</span>
+
+		<span id="calendar_1">
+			<img id="cal_img_1" class="datepicker" src="Images/calendar.gif" alt="Pick a date.">
+		</span>
+		<script type="text/javascript">
+			Calendar.setup({
+			inputField	 : "element_1_3",
+			baseField    : "element_1",
+			displayArea  : "calendar_1",
+			button		 : "cal_img_1",
+			ifFormat	 : "%B %e, %Y",
+			onSelect	 : selectDate
+			});
+		</script>
+
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Event start time </label>
+		<span>
+			<input id="element_4_1" name="element_4_1" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>HH</label>
+		</span>
+		<span>
+			<input id="element_4_2" name="element_4_2" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>MM</label>
+		</span>
+		<span>
+			<input id="element_4_3" name="element_4_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+			<label>SS</label>
+		</span>
+		<span>
+			<select class="element select" style="width:4em" id="element_4_4" name="element_4_4">
+				<option value="AM" >AM</option>
+				<option value="PM" >PM</option>
+			</select>
+			<label>AM/PM</label>
+		</span>
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Event end time </label>
+		<span>
+			<input id="element_5_1" name="element_5_1" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>HH</label>
+		</span>
+		<span>
+			<input id="element_5_2" name="element_5_2" class="element text " size="2" type="text" maxlength="2" value=""/> :
+			<label>MM</label>
+		</span>
+		<span>
+			<input id="element_5_3" name="element_5_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+			<label>SS</label>
+		</span>
+		<span>
+			<select class="element select" style="width:4em" id="element_5_4" name="element_5_4">
+				<option value="AM" >AM</option>
+				<option value="PM" >PM</option>
+			</select>
+			<label>AM/PM</label>
+		</span>
+		</li>
+
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="63484" />
+
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>
+
+	</div>
+	<img id="bottom" src="Images/bottom.png" alt="">
+	</body>
+</html>
+    </div><!-- END description-->
+
+  </body>
+</html>
